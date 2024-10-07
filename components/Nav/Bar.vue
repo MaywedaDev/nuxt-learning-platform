@@ -4,15 +4,19 @@
         <div class="d-flex align-center ga-6 w-100 py-3 fill-height pr-6">
             <nuxt-link class="text-body-2">Categories</nuxt-link>
             <div class="d-flex border rounded-xl w-100 h-100 px-5 py-3 ipt-border">
-                <input placeholder="Search for anything" />
+                <v-icon icon="mdi-magnify" color="grey" />
+                <input class="w-100 ml-3 text-body-2" placeholder="Search for anything" />
             </div>
             <nuxt-link class="text-body-2">Udemy Business</nuxt-link>
             <nuxt-link class="text-body-2">Teach on Udemy</nuxt-link>
-            <nuxt-link class="text-body-2"><v-icon icon="$vuetify" /></nuxt-link>
+            <nuxt-link class="text-body-2"><v-icon
+          icon="mdi-cart-outline"
+          end
+        ></v-icon></nuxt-link>
             <div class="d-flex ga-2">
                 <v-btn class="text-none text-body-1" :height="40" :rounded="0" variant="outlined">Log In</v-btn>
                 <v-btn class="text-none text-body-1" :height="40" :rounded="0" variant="flat" color="#000">Sign Up</v-btn>
-                <v-btn :height="40" density="default" icon="$vuetify" variant="outlined" :rounded="0" ></v-btn>
+                <v-btn :height="40" density="default" icon="mdi-web" variant="outlined" :rounded="0" ></v-btn>
             </div>
         </div>
     </v-toolbar>

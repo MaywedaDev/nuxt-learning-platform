@@ -1,6 +1,7 @@
 <template>
     <v-main>
         <main-hero/>
+        <course-section />
     </v-main>
 </template>
 
