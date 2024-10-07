@@ -1,7 +1,7 @@
 <template>
-    <div class="page">
-        <p>Hello world</p>
-    </div>
+    <v-main>
+        <main-hero/>
+    </v-main>
 </template>
 
 <style scoped lang="scss">
