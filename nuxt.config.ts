@@ -18,6 +18,14 @@ export default defineNuxtConfig({
     },
     //...
   ],
+  app: {
+    head: {
+      title: 'NuxtLearn',
+      meta: [
+        {name: 'description', content: 'Nuxt Learning Platform'}
+      ]
+    }
+  },
   css: ['vuetify/lib/styles/main.sass', '@mdi/font/css/materialdesignicons.min.css', '@/styles/styles.scss'],
   vite: {
     vue: {
