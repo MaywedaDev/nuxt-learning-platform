@@ -1,6 +1,6 @@
 <template>
     <div class="w-100 bg-secondary mb-10 py-10 px-12">
-        <v-container :height="300"  class="w-full d-flex justify-between">
+        <v-container :height="300"  class="w-full d-flex ga-10 justify-between">
             <div class="text-primary">
                 <h3 class="text-h4 mb-4">The Complete 2024 Web Development Bootcamp</h3>
                 <p class="mb-5 text-body-1">Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DApps</p>
