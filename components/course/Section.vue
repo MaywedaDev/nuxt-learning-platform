@@ -3,46 +3,36 @@
         <h2 class="text-h4 mb-4">A broad selection of courses</h2>
         <p class="text-body-1 mb-3">Choose from over 250,000 online video courses with new additions published every month</p>
 
-        <v-tabs v-model="tab">
-            <v-tab :value="0" label="Python">
+        <v-btn-group :rounded="0" class="text-none">
+            <v-btn class="text-none" :value="0" label="Python">
                 Python
-            </v-tab>
-            <v-tab :value="1" label="Microsoft Excel">
+            </v-btn>
+            <v-btn class="text-none" :value="1" label="Microsoft Excel">
                 Microsoft Excel
-            </v-tab>
-            <v-tab :value="2" label="Web Development">
+            </v-btn>
+            <v-btn class="text-none" :value="2" label="Web Development">
                 Web Development
-            </v-tab>
-            <v-tab :value="3" label="JavaScript">
+            </v-btn>
+            <v-btn class="text-none" :value="3" label="JavaScript">
                 JavaScript
-            </v-tab>
-            <v-tab :value="4" label="Data Science">
+            </v-btn>
+            <v-btn class="text-none" :value="4" label="Data Science">
                 Data Science
-            </v-tab>
-            <v-tab :value="5" label="Amazon AWS">
+            </v-btn>
+            <v-btn class="text-none" :value="5" label="Amazon AWS">
                 Amazon AWS
-            </v-tab>
-            <v-tab :value="6" label="Drawing">
+            </v-btn>
+            <v-btn class="text-none" :value="6" label="Drawing">
                 Drawing
-            </v-tab>
-            
-            
-            
-        </v-tabs>
+            </v-btn>
+        </v-btn-group>
         <v-card class="pa-8 py-10" :rounded="0" variant="outlined">
             <h3 class="text-h5 mb-2">Expand your career opportunities with Python</h3>
             <p class="w-50 mb-3">Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to</p>
             <v-btn :height="40" variant="outlined" :rounded="0" class="text-none mb-6 text-body-1">Explore Python</v-btn>
-            <v-tabs-window v-model="tab">
-                <v-tabs-window-item v-for="i in 6" :key="i" :value="i">
-                    <v-row class="my-4">
-                        <v-col cols="2" v-for="course in webDevelopmentCourses" :key="course.id">
-                            <course-card :course="course" />
-                        </v-col>
-                    </v-row>
-                </v-tabs-window-item>
-                
-            </v-tabs-window>
+            <div class="d-flex ga-4">
+                <course-card v-for="(course, index) in webDevelopmentCourses" key="index" :course="course" />
+            </div>
         </v-card>
     </v-container>
 </template>
@@ -90,6 +80,18 @@
     }];
 </script>
 
+<style scoped lang="scss">
+.v-btn{
+    color: $color-gray-350;
+    font-weight: 700;
+    font-size: 0.875em;
+}
+
+.v-card{
+    border-color: mix($color-gray-400, #fff, 30%);
+}
+</style>
+
 <!-- <v-row class="my-4">
     <v-col cols="12" sm="6" md="4" v-for="course in webDevelopmentCourses" :key="course.id">
         
@@ -133,4 +135,4 @@
         "reviews": "(1385)",
         "price": "N31,900"
     } -->
-]
+

@@ -2,6 +2,11 @@
     <v-main>
         <main-hero/>
         <course-section />
+        <course-common />
+        <featured-topics />
+        <business-section />
+        <inst-section />
+        
     </v-main>
 </template>
 
