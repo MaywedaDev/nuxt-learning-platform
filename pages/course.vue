@@ -1,5 +1,5 @@
 <template>
-    <v-main class="h-screen">
+    <v-main class="min-h-screen">
         <course-details/>
     </v-main>
 </template>
