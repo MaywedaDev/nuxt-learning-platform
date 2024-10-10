@@ -1,11 +1,13 @@
 <template>
-    <v-card class="mx-auto w-100" variant="flat">
+    <nuxt-link to="/course">
+        <v-card :min-width="220"  class="mx-auto w-100" variant="flat">
             <nuxt-img class="w-100 border" src="https://img-b.udemycdn.com/course/240x135/2485240_d405_7.jpg" alt="Course image" />
             <h4>{{ props.course.title }}</h4>
             <p>{{ props.course.instructor }}</p>
             <p><span>{{ props.course.rating }}</span> {{ props.course.reviews }}</p>
             <span>N41900</span>
     </v-card>
+    </nuxt-link>
 </template>
 
 <script setup lang="ts">

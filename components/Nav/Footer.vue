@@ -1,9 +1,9 @@
 <template>
     <v-footer class="px-12 py-8 flex-column" color="grey-600">
-        <div class="d-flex mb-16 w-100" :class="$style.links">
+        <div class="flex-wrap flex-md-nowrap d-flex mb-16 w-100" :class="$style.links">
             <ul>
-                <li>Udemy Business</li>
-                <li>Teach on Udemy</li>
+                <li>NuxtLearn Business</li>
+                <li>Teach on NuxtLearn</li>
                 <li>Get the app</li>
                 <li>About us</li>
                 <li>Contact us</li>

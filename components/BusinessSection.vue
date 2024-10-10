@@ -1,13 +1,13 @@
 <template>
-    <v-container class="d-flex ga-10 align-center mb-16" max-width="900px">
+    <v-container class="flex-md-row flex-column-reverse d-flex ga-10 align-center mb-16" max-width="900px">
         <div class="main_cont">
-            <h3 class="text-h4">Upskill your team with Udemy Business</h3>
+            <h3 class="text-h4">Upskill your team with NuxtLearn Business</h3>
             <ul>
-                <li>Unlimited access to 27,000+ top Udemy courses, anytime, anywhere</li>
+                <li>Unlimited access to 27,000+ top NuxtLearn courses, anytime, anywhere</li>
                 <li>International course collection in 14 languages</li>
                 <li>Top certifications in tech and business</li>
             </ul>
-            <v-btn :height="40"  class="text-none" :rounded="0" variant="flat" color="#000">Get Udemy Business</v-btn>
+            <v-btn :height="40"  class="text-none" :rounded="0" variant="flat" color="#000">Get NuxtLearn Business</v-btn>
             <v-btn :height="40"  class="text-none ml-3" :rounded="0" variant="outlined" color="#000">Learn More</v-btn>
         </div>
 

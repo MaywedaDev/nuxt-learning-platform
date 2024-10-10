@@ -1,8 +1,8 @@
 <template>
     <v-container class="mb-16">
         <h3 class="text-h4 mb-8">Featured topics by category</h3>
-        <div class="d-flex w-100 justify-between">
-            <div class="w-100" v-for="(category, index) in courses.categories" :key="index">
+        <div class="flex-wrap flex-sm-nowrap d-flex w-100 ga-10 justify-space-between">
+            <div class="w-auto" v-for="(category, index) in courses.categories" :key="index">
                 <h3 class="mb-4">{{ category.name }}</h3>
                 <ul>
                     <li class="mb-3" v-for="(course, index) in category.courses">
@@ -49,7 +49,7 @@
             "learners": 5977561
           },
           {
-            "name": "PMP",
+            "name": "PHP",
             "learners": 1733398
           }
         ]

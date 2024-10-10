@@ -5,7 +5,7 @@
                 Jump into Learning for less
             </v-card-title>
             <v-card-text class="text-body-1">
-                <p>If you’re new to Udemy, we’ve got good news: For a limited time, courses start at just ₦3,900 for new learners! Shop now</p>
+                <p>If you’re new to NuxtLearn, we’ve got good news: For a limited time, courses start at just ₦3,900 for new learners! Shop now</p>
             </v-card-text>
         </v-card>
         <nuxt-img class="w-100" height="400" src="heros/0661bb90-3d05-4709-95a2-c61f927cf78c.jpg" />
