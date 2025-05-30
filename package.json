@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.8.1",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^3.0.1",
     "nuxt": "^3.13.0",
     "vue": "latest",
     "vue-router": "latest"
